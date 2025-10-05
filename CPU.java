@@ -9,10 +9,11 @@ public class CPU extends Proceso{
 
     }
 
+ 
 
     @Override
     public void ejecutarAccion() {
-        
+        int resultado = numero1 + numero2;
     }
 }
 
