@@ -1,15 +1,10 @@
 public class Daemons extends Proceso {
-   
-    private int inicio;
-    private int fin;
-    private String mensaje = "";
+    //eliminé inicio y fin ya que no hacían nada
+    private String mensaje = ""; //añadi este atributo para poder usarlo en ejecutarAccion
 
-    public Daemons(int pid, String nombre, int inicio, int fin) {
+    public Daemons(int pid, String nombre) {
         super(pid, nombre);
-        this.inicio = inicio;
-        this.fin = fin;
     }
-
 
     @Override
     public void ejecutarAccion() {
