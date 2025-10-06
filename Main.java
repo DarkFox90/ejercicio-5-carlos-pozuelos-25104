@@ -8,7 +8,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        
+        Proceso p1 = new CPU(1, "suma", 89, 56);
+        System.out.println(p1);
     }
-
 }

@@ -15,6 +15,12 @@ public class CPU extends Proceso{
     public void ejecutarAccion() {
         int resultado = numero1 + numero2;
     }
+
+    @Override
+    public String toString() {
+        int resultado = numero1 + numero2;
+        return "la suma realizada tiene como resultado: " + resultado;
+    }
 }
 
 
