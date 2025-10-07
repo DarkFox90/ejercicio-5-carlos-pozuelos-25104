@@ -1,3 +1,4 @@
+//vista
 import java.util.Scanner;
 
 public class Vista {
@@ -7,14 +8,17 @@ public class Vista {
         sc = new Scanner(System.in);
     }
 
-    public String pedirIdentificacion() {
-        System.out.print("ingrese su nombre: ");
+    //añadí un parametro de mensaje para poder pedir un nombre y un apellido en procesoIO
+    public String pedirIdentificacion(String mensaje) {
+        System.out.print(mensaje);
         return sc.nextLine();
     }
 
+    //pide un numero y lo guarda para usarlo en CPU
     public int pedirNumeros() {
-        System.out.println("ingrese un numero: ");
+        System.out.print("ingrese un numero: ");
         int numero = sc.nextInt();
+        sc.nextLine();
         return numero;
     }
 

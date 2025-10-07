@@ -1,3 +1,4 @@
+//modelo
 public class Daemons extends Proceso {
     //eliminé inicio y fin ya que no hacían nada
     private String mensaje = ""; //añadi este atributo para poder usarlo en ejecutarAccion
@@ -6,6 +7,7 @@ public class Daemons extends Proceso {
         super(pid, nombre);
     }
 
+    //for loop que muestra el mensaje prueba daemon 5 veces
     @Override
     public void ejecutarAccion() {
         for (int i = 1; i <= 5; i++) {
@@ -13,6 +15,7 @@ public class Daemons extends Proceso {
         }
     }
 
+    //convierte a string mensaje que se crea en ejecutarAccion
     @Override
     public String toString() {
         return mensaje;
