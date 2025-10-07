@@ -9,7 +9,7 @@
 public class Main {
     public static void main(String[] args) {
         Proceso p1 = new CPU(1, "suma", 89, 56);
-        Proceso p2 = new Daemons(2, "repetición de mensaje", 0, 0);
+        Proceso p2 = new Daemons(2, "repetición de mensaje");
         p1.ejecutarAccion();
         System.out.println(p1);
         p2.ejecutarAccion();
